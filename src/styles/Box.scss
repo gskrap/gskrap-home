@@ -1,0 +1,49 @@
+@import 'color';
+@import 'size';
+
+.box {
+  width: $box-width;
+  height: $box-height;
+  background: $gray;
+  padding: $size-m;
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+
+  .top-bar {
+    margin-bottom: $size-m;
+    padding: $size-s $size-s $size-s $size-l;
+    background: $blue-dark; /* Old browsers */
+    background: -moz-linear-gradient(left, $blue-dark 18%, $blue-light 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(left, $blue-dark 18%,$blue-light 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to right, $blue-dark 18%,$blue-light 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    color: white;
+    cursor: grab;
+    display: flex;
+    justify-content: space-between;
+
+    .min-btn {
+      background: $gray;
+      font-size: $size-xl;
+      color: black;
+      box-sizing: border-box;
+      height: 18px;
+      width: 20px;
+      margin: $size-s;
+      text-align: center;
+      cursor: pointer;
+    }
+  }
+
+  .content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+
+    // todo: temp
+    background: black;
+    color: white;
+    padding: $size-l $size-xl;
+  }
+}
+
