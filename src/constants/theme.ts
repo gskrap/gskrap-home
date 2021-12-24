@@ -24,9 +24,9 @@ export const darkTheme: Theme = {
   variant: {
     appBackground: grayDark,
     boxBackground: grayLight,
-    boxTopBarBackground: `-webkit-linear-gradient(left, ${black} 18%, ${grayDark} 100%)`,
     headerBackground: black,
     headerColor: white,
+    boxTopBarBackground: `-webkit-linear-gradient(left, ${black} 18%, ${grayDark} 100%)`,
     boxContentBackground: black,
     boxContentColor: white,
   }
@@ -37,9 +37,9 @@ export const defaultTheme: Theme = {
   variant: {
     appBackground: offWhite,
     boxBackground: grayLight,
-    boxTopBarBackground: `-webkit-linear-gradient(left, ${blueDark} 18%, ${blueLight} 100%)`,
     headerBackground: grayDark,
     headerColor: white,
+    boxTopBarBackground: `-webkit-linear-gradient(left, ${blueDark} 18%, ${blueLight} 100%)`,
     boxContentBackground: black,
     boxContentColor: white,
   }
@@ -48,9 +48,9 @@ export const defaultTheme: Theme = {
 export const oceanTheme: Theme = {
   common,
   variant: {
-    appBackground: '#0B132B',
+    appBackground: '#1C2541',
     boxBackground: '#3A506B',
-    headerBackground: '#1C2541',
+    headerBackground: '#0B132B',
     headerColor: '#3A506B',
     boxTopBarBackground: `-webkit-linear-gradient(left, #1C2541 18%, #3A506B 100%)`,
     boxContentBackground: black,
@@ -62,11 +62,11 @@ export const valentineTheme: Theme = {
   common,
   variant: {
     appBackground: offWhite,
-    boxBackground: 'lightPink',
-    boxTopBarBackground: 'red',
-    headerBackground: 'red',
+    boxBackground: '#FFBBC1',
+    headerBackground: '#C00000',
     headerColor: white,
-    boxContentBackground: 'pink',
+    boxTopBarBackground: `-webkit-linear-gradient(left, #C00000 18%, #FFBBC1 100%)`,
+    boxContentBackground: '#FFDEE3',
     boxContentColor: black,
   }
 }

@@ -3,8 +3,9 @@ import styled from 'styled-components';
 import { AppContext } from './App';
 import {themeMap} from '../constants/theme';
 import {ThemeVariant} from '../constants/interfaces';
+import {themeEmojiOptionMap} from '../constants/themeEmojis';
 
-const HeaderEl= styled.header`
+const HeaderEl = styled.header`
   font-family: Honda_Regular;
   font-size: 40px;
   display: flex;
@@ -15,21 +16,24 @@ const HeaderEl= styled.header`
   `};
 `;
 
+const Select = styled.select`
+  width: 60px;
+  height: 40px;
+  font-size: 34px;
+  text-align: center;
+`;
+
 const Header = () => {
   const { variant, selectVariant } = useContext(AppContext);
 
   return (
     <>
-      <HeaderEl className="phxl">
+      <HeaderEl className="fac phxl">
         george skrapits
         {selectVariant && (
-          <div>
-            <select value={variant} onChange={(e) => selectVariant(e.target.value as ThemeVariant)}>
-              {Object.keys(themeMap).map((key) => (
-                <option key={key} value={key}>{key}</option>
-              ))}
-            </select>
-          </div>
+          <Select value={variant} onChange={(e) => selectVariant(e.target.value as ThemeVariant)}>
+            {Object.keys(themeMap).map((key) => themeEmojiOptionMap[key as ThemeVariant])}
+          </Select>
         )}
       </HeaderEl>
     </>
