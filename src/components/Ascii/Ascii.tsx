@@ -15,41 +15,6 @@ export const AsciiEl = styled.p`
   };
 `;
 
-const Octopus = () => (
-  <AsciiEl>
-    &nbsp;<br />
-    &nbsp;<br />
-    &nbsp;<br />
-    &nbsp;<br />
-    &nbsp;<br />
-    &nbsp;                      ___<br />
-    &nbsp;                   .-'   `'.<br />
-    &nbsp;                  /         \<br />
-    &nbsp;                  |         ;<br />
-    &nbsp;                  |0) ~ (0) |           ___.--,<br />
-    &nbsp;         _.._     |         |    _.---'`__.-( (_.<br />
-    &nbsp;  __.--'`_.. '.__.\    '--. \_.-' ,.--'`     `""`<br />
-    &nbsp; ( ,.--'`   ',__ /./;   ;, '.__.'`    __<br />
-    &nbsp; _`) )  .---.__.' / |   |\   \__..--""  """--.,_<br />
-    &nbsp;`---' .'.''-._.-'`_./  /\ '.  \ _.-~~~````~~~-._`-.__.'<br />
-    &nbsp;      | |  .' _.-' |  |  \  \  '.               `~---`<br />
-    &nbsp;       \ \/ .'     \  \   '. '-._)<br />
-    &nbsp;        \/ /        \  \    `=.__`~-.<br />
-    &nbsp;        / /\         `) )    / / `"".`\<br />
-    &nbsp;  , _.-'.'\ \        / /    ( (     / /<br />
-    &nbsp;   `--~`   ) )    .-'.'      '.'.  | (<br />
-    &nbsp;          (/`    ( (`          ) )  '-\<br />
-    &nbsp;           `      '-;         (-'
-    &nbsp;<br />
-    &nbsp;<br />
-    &nbsp;<br />
-    &nbsp;<br />
-    &nbsp;<br />
-    &nbsp;<br />
-    &nbsp;<br />
-  </AsciiEl>
-);
-
 const Heart = () => (
   <AsciiEl>
     &nbsp;<br />

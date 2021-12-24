@@ -8,7 +8,7 @@ const Earth = () => {
   useEffect(() => {
     setTimeout(() => {
       setFrameIdx((frameIdx + 1) % frames.length)
-    }, 60)
+    }, 30)
   }, [frameIdx])
 
   return frames[frameIdx]();
