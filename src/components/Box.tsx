@@ -9,6 +9,9 @@ const BoxEl = styled.div`
   width: 600px;
   padding: 4px;
   background: ${({ theme }) => theme.variant.boxBackground};
+  @media (max-width: 700px) {
+    width: initial;
+  };
 `;
 
 const TopBar = styled.div`
