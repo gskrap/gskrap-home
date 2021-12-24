@@ -21,6 +21,9 @@ const Select = styled.select`
   height: 40px;
   font-size: 34px;
   text-align: center;
+  ${({ theme }) => `
+    background: ${theme.variant.selectBackground};
+  `};
 `;
 
 const Header = () => {

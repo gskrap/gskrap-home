@@ -27,6 +27,7 @@ export interface VariantThemeVariables {
   headerColor: string;
   boxContentBackground: string;
   boxContentColor: string;
+  selectBackground: string;
 }
 
 export interface Theme {

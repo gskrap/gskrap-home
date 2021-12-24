@@ -29,6 +29,7 @@ export const darkTheme: Theme = {
     boxTopBarBackground: `-webkit-linear-gradient(left, ${black} 18%, ${grayDark} 100%)`,
     boxContentBackground: black,
     boxContentColor: white,
+    selectBackground: grayLight,
   }
 }
 
@@ -42,6 +43,7 @@ export const defaultTheme: Theme = {
     boxTopBarBackground: `-webkit-linear-gradient(left, ${blueDark} 18%, ${blueLight} 100%)`,
     boxContentBackground: black,
     boxContentColor: white,
+    selectBackground: offWhite,
   }
 }
 
@@ -55,6 +57,7 @@ export const oceanTheme: Theme = {
     boxTopBarBackground: `-webkit-linear-gradient(left, #1C2541 18%, #3A506B 100%)`,
     boxContentBackground: black,
     boxContentColor: white,
+    selectBackground: '#3A506B',
   }
 }
 
@@ -68,6 +71,7 @@ export const valentineTheme: Theme = {
     boxTopBarBackground: `-webkit-linear-gradient(left, #C00000 18%, #FFBBC1 100%)`,
     boxContentBackground: '#FFDEE3',
     boxContentColor: black,
+    selectBackground: '#FFDEE3',
   }
 }
 
