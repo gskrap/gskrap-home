@@ -1,5 +1,7 @@
 import { CommonThemeVariables, Theme, ThemeVariant } from './interfaces';
 
+export const GSKRAP_THEME = 'GSKRAP_THEME';
+
 const blueDark = '#1b007d';
 const blueLight = '#0081d1';
 const offWhite = '#EAE8E8';

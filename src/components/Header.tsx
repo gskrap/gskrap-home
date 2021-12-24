@@ -16,15 +16,15 @@ const HeaderEl= styled.header`
 `;
 
 const Header = () => {
-  const { variant, setVariant } = useContext(AppContext);
+  const { variant, selectVariant } = useContext(AppContext);
 
   return (
     <>
       <HeaderEl className="phxl">
         george skrapits
-        {setVariant && (
+        {selectVariant && (
           <div>
-            <select value={variant} onChange={(e) => setVariant(e.target.value as ThemeVariant)}>
+            <select value={variant} onChange={(e) => selectVariant(e.target.value as ThemeVariant)}>
               {Object.keys(themeMap).map((key) => (
                 <option key={key} value={key}>{key}</option>
               ))}
