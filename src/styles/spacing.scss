@@ -1,8 +1,10 @@
+@use 'sass:math';
+
 $base-unit:            8px;
 
 $whitespace-none:      0px;
-$whitespace-s:         $base-unit / 4;
-$whitespace-m:         $base-unit / 2;
+$whitespace-s:         math.div($base-unit, 4);
+$whitespace-m:         math.div($base-unit, 2);
 $whitespace-l:         $base-unit;
 $whitespace-xl:        $base-unit * 2;
 $whitespace-xxl:       $base-unit * 3;

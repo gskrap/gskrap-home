@@ -1,8 +1,10 @@
+@use 'sass:math';
+
 $base-unit:      8px;
 
 $size-none:      0px;
-$size-s:         $base-unit / 4;
-$size-m:         $base-unit / 2;
+$size-s:         math.div($base-unit, 4);
+$size-m:         math.div($base-unit, 2);
 $size-l:         $base-unit;
 $size-xl:        $base-unit * 1.5;
 $size-xxl:       $base-unit * 2;
