@@ -3,7 +3,6 @@ import styled from 'styled-components';
 import { AppContext } from './App';
 
 const BoxEl = styled.div`
-  position: absolute;
   display: flex;
   flex-direction: column;
   height: 450px;
@@ -40,8 +39,8 @@ const Content = styled.div`
   flex-direction: column;
   padding: 8px;
   ${({ theme }) => `
-    color: ${theme.variant.contentColor};
-    background: ${theme.variant.contentBackground};
+    color: ${theme.variant.boxContentColor};
+    background: ${theme.variant.boxContentBackground};
   `};
 `;
 

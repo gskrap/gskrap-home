@@ -1,25 +1,31 @@
 import React, { useState } from 'react';
-import { ThemeProvider } from 'styled-components';
+import styled, { ThemeProvider } from 'styled-components';
 import Box from './Box';
 import Header from './Header';
 import { themeMap } from '../constants/theme';
 import { VariantContext, Variant } from '../constants/interfaces';
 import '../styles/App.scss';
 
-export const AppContext = React.createContext<VariantContext>({ variant: Variant.WINDOWS });
+const AppWrapper = styled.div`
+  height: 100%;
+  background: ${({ theme }) => theme.variant.appBackground};
+`;
+
+export const AppContext = React.createContext<VariantContext>({ variant: Variant.DEFAULT });
 
 const App = () => {
-  const [variant, setVariant] = useState(Variant.WINDOWS);
-  const variantToggle = () => setVariant(variant === Variant.WINDOWS ? Variant.MAC : Variant.WINDOWS);
+  const [variant, setVariant] = useState(Variant.DEFAULT);
   const theme = themeMap[variant];
 
   return (
-    <AppContext.Provider value={{ variant, variantToggle }} >
+    <AppContext.Provider value={{ variant, setVariant }} >
       <ThemeProvider theme={theme}>
-        <Header />
-        <div className="maxl">
-          <Box />
-        </div>
+        <AppWrapper>
+          <Header />
+          <div className="maxl">
+            <Box />
+          </div>
+        </AppWrapper>
       </ThemeProvider>
     </AppContext.Provider>
   );

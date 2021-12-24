@@ -19,6 +19,15 @@
   font-family: Microsoft_Sans_Serif;
 }
 
+html {
+  display: flex;
+  flex-direction: column;
+}
+
+html, body, #root {
+  height: 100%;
+}
+
 .border {
   border-top: 1px solid white;
   border-right: 1px solid black;

@@ -16,31 +16,47 @@ const common: CommonThemeVariables = {
   white,
 }
 
-export const macTheme: Theme = {
+export const darkTheme: Theme = {
   common,
   variant: {
-    boxBackground: 'red',
-    boxTopBarBackground: 'red',
-    background: blueLight,
-    color: blueDark,
-    contentBackground: 'red',
-    contentColor: black,
+    appBackground: grayDark,
+    boxBackground: grayLight,
+    boxTopBarBackground: `-webkit-linear-gradient(left, ${black} 18%, ${grayDark} 100%)`,
+    headerBackground: black,
+    headerColor: white,
+    boxContentBackground: black,
+    boxContentColor: white,
   }
 }
 
-export const windowsTheme: Theme = {
+export const defaultTheme: Theme = {
   common,
   variant: {
+    appBackground: white,
     boxBackground: grayLight,
     boxTopBarBackground: `-webkit-linear-gradient(left, ${blueDark} 18%, ${blueLight} 100%)`,
-    background: grayDark,
-    color: white,
-    contentBackground: black,
-    contentColor: white,
+    headerBackground: grayDark,
+    headerColor: white,
+    boxContentBackground: black,
+    boxContentColor: white,
+  }
+}
+
+export const valentineTheme: Theme = {
+  common,
+  variant: {
+    appBackground: white,
+    boxBackground: 'red',
+    boxTopBarBackground: 'red',
+    headerBackground: 'red',
+    headerColor: white,
+    boxContentBackground: 'pink',
+    boxContentColor: black,
   }
 }
 
 export const themeMap: Record<Variant, Theme> = {
-  [Variant.MAC]: macTheme,
-  [Variant.WINDOWS]: windowsTheme,
+  [Variant.DARK]: darkTheme,
+  [Variant.DEFAULT]: defaultTheme,
+  [Variant.VALENTINE]: valentineTheme,
 }

@@ -1,18 +1,20 @@
 import React, { useContext } from 'react';
 import styled from 'styled-components';
 import { AppContext } from './App';
+import {themeMap} from '../constants/theme';
+import {Variant} from '../constants/interfaces';
 
 const HeaderEl= styled.header`
   font-family: Honda_Regular;
   font-size: 40px;
   ${({ theme }) => `
-    color: ${theme.variant.color};
-    background: ${theme.variant.background};
+    color: ${theme.variant.headerColor};
+    background: ${theme.variant.headerBackground};
   `};
 `;
 
 const Header = () => {
-  const { variantToggle } = useContext(AppContext);
+  const { variant, setVariant } = useContext(AppContext);
 
   return (
     <>
@@ -20,7 +22,13 @@ const Header = () => {
         george skrapits
       </HeaderEl>
       <div className="maxl">
-        <button onClick={variantToggle}>toggle theme</button>
+        {setVariant && (
+          <select value={variant} onChange={(e) => setVariant(e.target.value as Variant)}>
+            {Object.keys(themeMap).map((key) => (
+              <option key={key} value={key}>{key}</option>
+            ))}
+          </select>
+        )}
       </div>
     </>
   )

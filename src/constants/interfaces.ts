@@ -1,11 +1,12 @@
 export enum Variant {
-  WINDOWS = 'WINDOWS',
-  MAC = 'MAC',
+  DEFAULT = 'DEFAULT',
+  DARK = 'DARK',
+  VALENTINE = 'VALENTINE',
 }
 
 export interface VariantContext {
   variant: Variant;
-  variantToggle?: () => void;
+  setVariant?: (variant: Variant) => void;
 }
 
 export interface CommonThemeVariables {
@@ -18,12 +19,13 @@ export interface CommonThemeVariables {
 }
 
 export interface VariantThemeVariables {
+  appBackground: string;
   boxBackground: string;
   boxTopBarBackground: string;
-  background: string;
-  color: string;
-  contentBackground: string;
-  contentColor: string;
+  headerBackground: string;
+  headerColor: string;
+  boxContentBackground: string;
+  boxContentColor: string;
 }
 
 export interface Theme {
