@@ -1,18 +1,31 @@
-import React from 'react';
+import React, {useState} from 'react';
+import {ThemeProvider} from 'styled-components';
 import Box from './Box';
+import Header from './Header';
+import {macTheme, windowsTheme} from '../constants/theme';
+import {Context, Variant} from '../constants/interfaces';
 import '../styles/App.scss';
-import GlobalContextProvider from '../context/globalContext';
+
+export const VariantContext = React.createContext<Context>({ variant: Variant.WINDOWS });
 
 const App = () => {
+  const [variant, setVariant] = useState(Variant.WINDOWS);
+
+  const variantToggle = () => {
+    setVariant(variant === Variant.WINDOWS ? Variant.MAC : Variant.WINDOWS);
+  };
+
   return (
-    <GlobalContextProvider>
-      <div className="App">
-        <header className="phxl">george skrapits</header>
-        <div className="maxl">
-          <Box num={99} />
+    <VariantContext.Provider value={{ variant, variantToggle }} >
+      <ThemeProvider theme={ variant === Variant.MAC ? macTheme : windowsTheme}>
+        <div className="App">
+          <Header />
+          <div className="maxl">
+            <Box />
+          </div>
         </div>
-      </div>
-    </GlobalContextProvider>
+      </ThemeProvider>
+    </VariantContext.Provider>
   );
 }
 
