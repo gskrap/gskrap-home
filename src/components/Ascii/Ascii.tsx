@@ -120,7 +120,7 @@ const Moon = () => (
 const themeAsciiMap: Record<ThemeVariant, JSX.Element> = {
   [ThemeVariant.DARK]: <Moon />,
   [ThemeVariant.DEFAULT]: <Earth />,
-  [ThemeVariant.OCEAN]: <Octopus />,
+  [ThemeVariant.OCEAN]: <Earth />,
   [ThemeVariant.VALENTINE]: <Heart />,
 }
 
