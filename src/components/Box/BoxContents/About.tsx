@@ -1,6 +1,6 @@
 import React, { useContext } from 'react';
-import ThemeAscii from '../ThemeAscii';
 import { AppContext } from '../../App';
+import Ascii from '../../Ascii/Ascii';
 
 const About = () => {
   const { variant } = useContext(AppContext);
@@ -9,7 +9,7 @@ const About = () => {
     <>
       Engineer @ Attentive<br /><br />
       <a href={'https://attentivemobile.com'} target='_blank'>attentivemobile.com</a><br />
-      <ThemeAscii />
+      <Ascii />
     </>
   );
 };

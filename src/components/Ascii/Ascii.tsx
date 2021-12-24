@@ -1,19 +1,21 @@
 import React, { useContext } from 'react';
 import styled from 'styled-components';
-import Earth from '../Box/EarthAscii';
+import Earth from './EarthAscii';
 import { AppContext } from '../App';
 import {ThemeVariant} from '../../constants/interfaces';
 
-const Ascii = styled.p`
-  font-size: 12px;
+export const AsciiEl = styled.p`
+  margin: 26px auto;
+  width: fit-content;
+  font-size: 10px;
   white-space: pre;
   @media (max-width: 700px) {
-    font-size: 8px;
+    font-size: 6px;
   };
 `;
 
 const Fish = () => (
-  <Ascii>
+  <AsciiEl>
     &nbsp;                         |<br />
     &nbsp;                         i<br />
     &nbsp;                        ,n.<br />
@@ -40,42 +42,41 @@ const Fish = () => (
     &nbsp;      `Y@@#m##mmmmnmnnnnnnnnnvnvvvvv%v%%%%%"'<br />
     &nbsp;         `""Y8@@@nmnnnnnnnnnvnvvvv%%%"""'<br />
     &nbsp;                 '''''""""""'''''<br />
-  </Ascii>
+  </AsciiEl>
 );
 
 const Heart = () => (
-  <Ascii>
-    -----—–-—▒▒▒▒▒▒▒▒▒▒<br />
-    -----—–-▒███████████▒<br />
-    -----—▒████▒▒▒▒▒▒▒███▒<br />
-    ------▒████▒▒▒▒▒▒▒▒▒███▒……………….▒▒▒▒▒▒<br />
-    ------▒███▒▒▒▒▒███▒▒▒███▒…………..▒██████▒<br />
-    ------▒███▒▒▒▒██████▒▒███▒……….▒██▒▒▒▒██▒<br />
-    -----—▒███▒▒▒███████▒▒██▒…….▒███▒▒█▒▒██▒<br />
-    -----—–▒███▒▒████████▒██▒…▒███▒▒███▒▒██▒<br />
-    -----——–▒██▒▒██████████▒▒███▒▒████▒▒██▒<br />
-    -----———▒██▒▒██████████████▒████▒▒██▒<br />
-    -----———-▒██▒▒█████████████████▒▒██▒<br />
-    -----————▒██▒▒██████████████▒▒██▒<br />
-    -----————–▒██▒▒████████████▒▒██▒<br />
-    -----—————-▒██▒▒██████████▒▒██▒<br />
-    -----—————–▒██▒▒████████▒▒██▒<br />
-    -----——————-▒██▒▒██████▒▒██▒<br />
-    -----———————▒██▒▒████▒▒██▒<br />
-    -----———————-▒██▒▒███▒▒█▒<br />
-    -----————————▒██▒▒█▒▒█▒<br />
-    -----————————-▒██▒▒▒█▒<br />
-    -----—————————▒██▒█▒<br />
-    -----—————————♥♥♥♥♥♥<br />
-    -----—————————-♥♥♥♥♥<br />
-    -----——————————♥♥♥<br />
-    -----—————————-—♥♥<br />
-    -----———————————♥
-  </Ascii>
+  <AsciiEl>
+    &nbsp;         ▒▒▒▒▒▒▒▒▒▒<br />
+    &nbsp;        ▒███████████▒<br />
+    &nbsp;       ▒████▒▒▒▒▒▒▒███▒<br />
+    &nbsp;      ▒████▒▒▒▒▒▒▒▒▒███▒        ▒▒▒▒▒▒<br />
+    &nbsp;      ▒███▒▒▒▒▒███▒▒▒███▒      ▒██████▒<br />
+    &nbsp;      ▒███▒▒▒▒██████▒▒███▒    ▒██▒▒▒▒██▒<br />
+    &nbsp;      ▒███▒▒▒███████▒▒██▒   ▒███▒▒█▒▒██▒<br />
+    &nbsp;       ▒███▒▒████████▒██▒ ▒███▒▒███▒▒██▒<br />
+    &nbsp;        ▒██▒▒██████████▒▒███▒▒████▒▒██▒<br />
+    &nbsp;        ▒██▒▒██████████████▒████▒▒██▒<br />
+    &nbsp;         ▒██▒▒█████████████████▒▒██▒<br />
+    &nbsp;          ▒██▒▒██████████████▒▒██▒<br />
+    &nbsp;           ▒██▒▒████████████▒▒██▒<br />
+    &nbsp;           ▒██▒▒██████████▒▒██▒<br />
+    &nbsp;           ▒██▒▒████████▒▒██▒<br />
+    &nbsp;            ▒██▒▒██████▒▒██▒<br />
+    &nbsp;            ▒██▒▒████▒▒██▒<br />
+    &nbsp;             ▒██▒▒███▒▒█▒<br />
+    &nbsp;              ▒██▒▒█▒▒█▒<br />
+    &nbsp;              ▒██▒▒▒█▒<br />
+    &nbsp;              ▒██▒█▒<br />
+    &nbsp;              ▒██▒█▒<br />
+    &nbsp;               ██▒█<br />
+    &nbsp;                █▒<br />
+    &nbsp;                ▒<br />
+  </AsciiEl>
 );
 
 const Moon = () => (
-  <Ascii>
+  <AsciiEl>
     &nbsp;                   .------.<br />
     &nbsp;              .---'  o     `--.<br />
     &nbsp;             '    .            `-.<br />
@@ -101,7 +102,7 @@ const Moon = () => (
     &nbsp;             .             .    .-'<br />
     &nbsp;              `---.         .--'<br />
     &nbsp;                   `------'<br />
-  </Ascii>
+  </AsciiEl>
 );
 
 const themeAsciiMap: Record<ThemeVariant, JSX.Element> = {
@@ -111,9 +112,9 @@ const themeAsciiMap: Record<ThemeVariant, JSX.Element> = {
   [ThemeVariant.VALENTINE]: <Heart />,
 }
 
-const ThemeAscii = () => {
+const Ascii = () => {
   const { variant } = useContext(AppContext);
   return themeAsciiMap[variant];
 }
 
-export default ThemeAscii;
+export default Ascii;
