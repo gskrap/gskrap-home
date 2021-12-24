@@ -1,6 +1,7 @@
 export enum ThemeVariant {
   DEFAULT = 'DEFAULT',
   DARK = 'DARK',
+  OCEAN = 'OCEAN',
   VALENTINE = 'VALENTINE',
 }
 

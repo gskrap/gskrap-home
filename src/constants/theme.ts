@@ -45,11 +45,24 @@ export const defaultTheme: Theme = {
   }
 }
 
+export const oceanTheme: Theme = {
+  common,
+  variant: {
+    appBackground: '#0B132B',
+    boxBackground: '#3A506B',
+    headerBackground: '#1C2541',
+    headerColor: '#3A506B',
+    boxTopBarBackground: `-webkit-linear-gradient(left, #1C2541 18%, #3A506B 100%)`,
+    boxContentBackground: black,
+    boxContentColor: white,
+  }
+}
+
 export const valentineTheme: Theme = {
   common,
   variant: {
-    appBackground: white,
-    boxBackground: 'red',
+    appBackground: offWhite,
+    boxBackground: 'lightPink',
     boxTopBarBackground: 'red',
     headerBackground: 'red',
     headerColor: white,
@@ -61,5 +74,6 @@ export const valentineTheme: Theme = {
 export const themeMap: Record<ThemeVariant, Theme> = {
   [ThemeVariant.DARK]: darkTheme,
   [ThemeVariant.DEFAULT]: defaultTheme,
+  [ThemeVariant.OCEAN]: oceanTheme,
   [ThemeVariant.VALENTINE]: valentineTheme,
 }
