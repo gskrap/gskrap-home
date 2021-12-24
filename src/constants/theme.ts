@@ -1,7 +1,8 @@
-import { CommonThemeVariables, Theme, Variant } from './interfaces';
+import { CommonThemeVariables, Theme, ThemeVariant } from './interfaces';
 
 const blueDark = '#1b007d';
 const blueLight = '#0081d1';
+const offWhite = '#EAE8E8';
 const grayDark = '#322F36';
 const grayLight = '#BFBFBF';
 const black = '#000000';
@@ -32,7 +33,7 @@ export const darkTheme: Theme = {
 export const defaultTheme: Theme = {
   common,
   variant: {
-    appBackground: white,
+    appBackground: offWhite,
     boxBackground: grayLight,
     boxTopBarBackground: `-webkit-linear-gradient(left, ${blueDark} 18%, ${blueLight} 100%)`,
     headerBackground: grayDark,
@@ -55,8 +56,8 @@ export const valentineTheme: Theme = {
   }
 }
 
-export const themeMap: Record<Variant, Theme> = {
-  [Variant.DARK]: darkTheme,
-  [Variant.DEFAULT]: defaultTheme,
-  [Variant.VALENTINE]: valentineTheme,
+export const themeMap: Record<ThemeVariant, Theme> = {
+  [ThemeVariant.DARK]: darkTheme,
+  [ThemeVariant.DEFAULT]: defaultTheme,
+  [ThemeVariant.VALENTINE]: valentineTheme,
 }

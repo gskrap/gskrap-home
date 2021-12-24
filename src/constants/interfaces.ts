@@ -1,12 +1,12 @@
-export enum Variant {
+export enum ThemeVariant {
   DEFAULT = 'DEFAULT',
   DARK = 'DARK',
   VALENTINE = 'VALENTINE',
 }
 
-export interface VariantContext {
-  variant: Variant;
-  setVariant?: (variant: Variant) => void;
+export interface ThemeContext {
+  variant: ThemeVariant;
+  setVariant?: (variant: ThemeVariant) => void;
 }
 
 export interface CommonThemeVariables {

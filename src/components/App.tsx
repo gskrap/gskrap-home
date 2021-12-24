@@ -3,7 +3,7 @@ import styled, { ThemeProvider } from 'styled-components';
 import Box from './Box';
 import Header from './Header';
 import { themeMap } from '../constants/theme';
-import { VariantContext, Variant } from '../constants/interfaces';
+import { ThemeContext, ThemeVariant } from '../constants/interfaces';
 import '../styles/App.scss';
 
 const AppWrapper = styled.div`
@@ -11,10 +11,10 @@ const AppWrapper = styled.div`
   background: ${({ theme }) => theme.variant.appBackground};
 `;
 
-export const AppContext = React.createContext<VariantContext>({ variant: Variant.DEFAULT });
+export const AppContext = React.createContext<ThemeContext>({ variant: ThemeVariant.DEFAULT });
 
 const App = () => {
-  const [variant, setVariant] = useState(Variant.DEFAULT);
+  const [variant, setVariant] = useState(ThemeVariant.DEFAULT);
   const theme = themeMap[variant];
 
   return (
