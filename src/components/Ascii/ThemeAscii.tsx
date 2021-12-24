@@ -1,6 +1,6 @@
 import React, { useContext } from 'react';
 import styled from 'styled-components';
-import Earth from './EarthAscii';
+import Earth from '../Box/EarthAscii';
 import { AppContext } from '../App';
 import {ThemeVariant} from '../../constants/interfaces';
 
