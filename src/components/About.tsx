@@ -1,6 +1,6 @@
 import React, { useContext } from 'react';
-import { AppContext } from '../../App';
-import Ascii from '../../Ascii/Ascii';
+import { AppContext } from './App';
+import Ascii from './Ascii/Ascii';
 
 const About = () => {
   const { variant } = useContext(AppContext);

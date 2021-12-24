@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 import styled, { ThemeProvider } from 'styled-components';
 import Header from './Header';
-import Box from './Box/Box';
-import About from './Box/BoxContents/About';
+import Box from './Box';
+import About from './About';
 import {GSKRAP_THEME, themeMap} from '../constants/theme';
 import { ThemeContext, ThemeVariant } from '../constants/interfaces';
 import '../styles/App.scss';
