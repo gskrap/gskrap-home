@@ -71,7 +71,7 @@ export const EarthFrame_002 = () => (
 
 export const EarthFrame_003 = () => (
   <AsciiEl>
-    &nbsp;                      .-/+osysoooooo+/:.<br />
+    &nbsp;                       .-/+osysoooooo+/:.<br />
     &nbsp;                 `:osyhdhy+++:`    -sdyhh@@ho:`<br />
     &nbsp;              :odd/` `.        -oo -N@o.y@@@@@@@s:<br />
     &nbsp;           -sN@h@:            -:`Ny@@@@@@@@@@@@@@@Ny:<br />
@@ -207,7 +207,7 @@ export const EarthFrame_006 = () => (
 
 export const EarthFrame_007 = () => (
   <AsciiEl>
-    &nbsp;                      .-/+osyyyooooo+/:.<br />
+    &nbsp;                       .-/+osyyyooooo+/:.<br />
     &nbsp;                 `:osshsohhho++..    `sNd@dyo:`<br />
     &nbsp;              :osh@s.   .`         :o/-yNs:d@@@@s:<br />
     &nbsp;           -s@Nddyhd-             -:`dy@@@@@@@@@@@Ny:<br />
@@ -309,7 +309,7 @@ export const EarthFrame_009 = () => (
 
 export const EarthFrame_010 = () => (
   <AsciiEl>
-    &nbsp;                      .-/+osyyyyoooo+/:.<br />
+    &nbsp;                       .-/+osyyyyoooo+/:.<br />
     &nbsp;                 `:osyysy-+ddh++/ .  `./@Ndyo:`<br />
     &nbsp;              :sds+yds`   ``         `++:s@y+@@@s:<br />
     &nbsp;           -s@NNd@Nyo@y`             -:`hyN@NN@@@@Ny:<br />
@@ -1363,7 +1363,7 @@ export const EarthFrame_040 = () => (
 
 export const EarthFrame_041 = () => (
   <AsciiEl>
-    &nbsp;                      .-/+ooooosoooo+/:.<br />
+    &nbsp;                       .-/+ooooosoooo+/:.<br />
     &nbsp;                 `:oshdhd@@hssdod@dd@h@yoyhso:`<br />
     &nbsp;              :oso:.:+/..`:y@@@@@@@@@@Nso//osyhss:<br />
     &nbsp;           -ss/`            :sd@@@@@@@@@@@hh@@@Ndshs:<br />
@@ -2587,7 +2587,7 @@ export const EarthFrame_076 = () => (
 
 export const EarthFrame_077 = () => (
   <AsciiEl>
-    &nbsp;                      .-/+oooooooooo+/:.<br />
+    &nbsp;                       .-/+oooooooooo+/:.<br />
     &nbsp;                 `:oy@N@@@@@NNN@@N@@hydd@Nhso:`<br />
     &nbsp;              :sd@@@@@@@dN@@@@@@@so-.++@+-.`-/shs:<br />
     &nbsp;           -sN@@@@@@@@@@@@@@@@@@@@@h   /.  `````-/ss:<br />
@@ -2621,7 +2621,7 @@ export const EarthFrame_077 = () => (
 
 export const EarthFrame_078 = () => (
   <AsciiEl>
-    &nbsp;                      .-/+oooooooooo+/:.<br />
+    &nbsp;                       .-/+oooooooooo+/:.<br />
     &nbsp;                 `:oy@N@@@@@NN@@@N@@dyhd@Ndso:`<br />
     &nbsp;              :sd@@@@@@@@hN@@@@@@Nso--/sh/-../oys:<br />
     &nbsp;           -sN@@@@@@@@@d@@@@@@@@@@@@h   +. `````./ss:<br />
