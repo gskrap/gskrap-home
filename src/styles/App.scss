@@ -3,6 +3,13 @@
 @import 'spacing';
 
 @font-face {
+  font-family: Honda_Regular;
+  src: local("Honda_Regular"),
+  url(../assets/Honda_Regular.ttf);
+  font-weight: bold;
+}
+
+@font-face {
   font-family: Microsoft_Sans_Serif;
   src: local("Microsoft_Sans_Serif"),
   url(../assets/Microsoft_Sans_Serif.ttf);
@@ -10,14 +17,10 @@
 }
 
 @font-face {
-  font-family: Honda_Regular;
-  src: local("Honda_Regular"),
-  url(../assets/Honda_Regular.ttf);
+  font-family: Terminal_Vector;
+  src: local("TerminalVector"),
+  url(../assets/Terminal_Vector.ttf);
   font-weight: bold;
-}
-
-* {
-  font-family: Microsoft_Sans_Serif;
 }
 
 html, body, #root {

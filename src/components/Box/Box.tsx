@@ -1,11 +1,9 @@
-import React, { useContext } from 'react';
+import React, { ReactNode } from 'react';
 import styled from 'styled-components';
-import { AppContext } from './App';
 
 const BoxEl = styled.div`
   display: flex;
   flex-direction: column;
-  height: 450px;
   width: 600px;
   padding: 4px;
   background: ${({ theme }) => theme.variant.boxBackground};
@@ -41,24 +39,27 @@ const Content = styled.div`
   display: flex;
   flex-direction: column;
   padding: 8px;
+  font-family: Terminal_Vector;
   ${({ theme }) => `
     color: ${theme.variant.boxContentColor};
     background: ${theme.variant.boxContentBackground};
   `};
 `;
 
-const Box = () => {
-  const { variant } = useContext(AppContext);
+interface BoxProps {
+  children: ReactNode;
+  name: string;
+}
 
+const Box = ({ children, name }: BoxProps) => {
   return (
     <BoxEl className="border">
       <TopBar>
-        <div className="pts">Box name goes here</div>
+        <div className="pts">{name}</div>
         <Btn className="border">_</Btn>
       </TopBar>
       <Content>
-        theme is:&nbsp;
-        {variant}
+        {children}
       </Content>
     </BoxEl>
   )
