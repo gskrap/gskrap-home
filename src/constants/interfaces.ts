@@ -20,6 +20,7 @@ export interface CommonThemeVariables {
 }
 
 export interface VariantThemeVariables {
+  asciiColor: string;
   appBackground: string;
   boxBackground: string;
   boxTopBarBackground: string;

@@ -22,6 +22,7 @@ const common: CommonThemeVariables = {
 export const darkTheme: Theme = {
   common,
   variant: {
+    asciiColor: white,
     appBackground: grayDark,
     boxBackground: grayLight,
     headerBackground: black,
@@ -36,6 +37,7 @@ export const darkTheme: Theme = {
 export const defaultTheme: Theme = {
   common,
   variant: {
+    asciiColor: white,
     appBackground: offWhite,
     boxBackground: grayLight,
     headerBackground: grayDark,
@@ -50,6 +52,7 @@ export const defaultTheme: Theme = {
 export const oceanTheme: Theme = {
   common,
   variant: {
+    asciiColor: white,
     appBackground: '#1C2541',
     boxBackground: '#3A506B',
     headerBackground: '#0B132B',
@@ -64,6 +67,7 @@ export const oceanTheme: Theme = {
 export const valentineTheme: Theme = {
   common,
   variant: {
+    asciiColor: '#C00000',
     appBackground: offWhite,
     boxBackground: '#FFBBC1',
     headerBackground: '#C00000',

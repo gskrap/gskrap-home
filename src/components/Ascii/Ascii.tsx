@@ -9,6 +9,7 @@ export const AsciiEl = styled.p`
   width: fit-content;
   font-size: 10px;
   white-space: pre;
+  color: ${({ theme }) => theme.variant.asciiColor};
   @media (max-width: 700px) {
     font-size: 6px;
   };
