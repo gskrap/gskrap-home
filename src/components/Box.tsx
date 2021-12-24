@@ -1,6 +1,6 @@
-import React, {useContext} from 'react';
+import React, { useContext } from 'react';
 import styled from 'styled-components';
-import {VariantContext} from './App';
+import { AppContext } from './App';
 
 const BoxEl = styled.div`
   position: absolute;
@@ -46,7 +46,8 @@ const Content = styled.div`
 `;
 
 const Box = () => {
-  const { variant } = useContext(VariantContext);
+  const { variant } = useContext(AppContext);
+
   return (
     <BoxEl className="border">
       <TopBar>

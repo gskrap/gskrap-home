@@ -1,31 +1,27 @@
-import React, {useState} from 'react';
-import {ThemeProvider} from 'styled-components';
+import React, { useState } from 'react';
+import { ThemeProvider } from 'styled-components';
 import Box from './Box';
 import Header from './Header';
-import {macTheme, windowsTheme} from '../constants/theme';
-import {Context, Variant} from '../constants/interfaces';
+import { themeMap } from '../constants/theme';
+import { VariantContext, Variant } from '../constants/interfaces';
 import '../styles/App.scss';
 
-export const VariantContext = React.createContext<Context>({ variant: Variant.WINDOWS });
+export const AppContext = React.createContext<VariantContext>({ variant: Variant.WINDOWS });
 
 const App = () => {
   const [variant, setVariant] = useState(Variant.WINDOWS);
-
-  const variantToggle = () => {
-    setVariant(variant === Variant.WINDOWS ? Variant.MAC : Variant.WINDOWS);
-  };
+  const variantToggle = () => setVariant(variant === Variant.WINDOWS ? Variant.MAC : Variant.WINDOWS);
+  const theme = themeMap[variant];
 
   return (
-    <VariantContext.Provider value={{ variant, variantToggle }} >
-      <ThemeProvider theme={ variant === Variant.MAC ? macTheme : windowsTheme}>
-        <div className="App">
-          <Header />
-          <div className="maxl">
-            <Box />
-          </div>
+    <AppContext.Provider value={{ variant, variantToggle }} >
+      <ThemeProvider theme={theme}>
+        <Header />
+        <div className="maxl">
+          <Box />
         </div>
       </ThemeProvider>
-    </VariantContext.Provider>
+    </AppContext.Provider>
   );
 }
 

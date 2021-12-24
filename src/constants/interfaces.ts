@@ -3,12 +3,12 @@ export enum Variant {
   MAC = 'MAC',
 }
 
-export interface Context {
+export interface VariantContext {
   variant: Variant;
   variantToggle?: () => void;
 }
 
-export interface CommonVariables {
+export interface CommonThemeVariables {
   blueDark: string;
   blueLight: string;
   grayDark: string;
@@ -17,7 +17,7 @@ export interface CommonVariables {
   white: string;
 }
 
-export interface VariantVariables {
+export interface VariantThemeVariables {
   boxBackground: string;
   boxTopBarBackground: string;
   background: string;
@@ -27,6 +27,6 @@ export interface VariantVariables {
 }
 
 export interface Theme {
-  common: CommonVariables,
-  variant: VariantVariables,
+  common: CommonThemeVariables,
+  variant: VariantThemeVariables,
 }

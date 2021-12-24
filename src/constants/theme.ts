@@ -1,4 +1,4 @@
-import { CommonVariables, Theme } from './interfaces';
+import { CommonThemeVariables, Theme, Variant } from './interfaces';
 
 const blueDark = '#1b007d';
 const blueLight = '#0081d1';
@@ -7,7 +7,7 @@ const grayLight = '#BFBFBF';
 const black = '#000000';
 const white = '#FFFFFF';
 
-const commonColors: CommonVariables = {
+const common: CommonThemeVariables = {
   blueDark,
   blueLight,
   grayDark,
@@ -17,7 +17,7 @@ const commonColors: CommonVariables = {
 }
 
 export const macTheme: Theme = {
-  common: commonColors,
+  common,
   variant: {
     boxBackground: 'red',
     boxTopBarBackground: 'red',
@@ -29,7 +29,7 @@ export const macTheme: Theme = {
 }
 
 export const windowsTheme: Theme = {
-  common: commonColors,
+  common,
   variant: {
     boxBackground: grayLight,
     boxTopBarBackground: `-webkit-linear-gradient(left, ${blueDark} 18%, ${blueLight} 100%)`,
@@ -38,4 +38,9 @@ export const windowsTheme: Theme = {
     contentBackground: black,
     contentColor: white,
   }
+}
+
+export const themeMap: Record<Variant, Theme> = {
+  [Variant.MAC]: macTheme,
+  [Variant.WINDOWS]: windowsTheme,
 }

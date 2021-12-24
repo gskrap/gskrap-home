@@ -1,6 +1,6 @@
-import React, {useContext} from 'react';
+import React, { useContext } from 'react';
 import styled from 'styled-components';
-import {VariantContext} from './App';
+import { AppContext } from './App';
 
 const HeaderEl= styled.header`
   font-family: Honda_Regular;
@@ -12,7 +12,7 @@ const HeaderEl= styled.header`
 `;
 
 const Header = () => {
-  const { variantToggle } = useContext(VariantContext);
+  const { variantToggle } = useContext(AppContext);
 
   return (
     <>
