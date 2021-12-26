@@ -18,7 +18,7 @@ const BoxContainer = styled.div`
   position: relative;
 `;
 
-export const AppContext = React.createContext<ThemeContext>({ variant: ThemeVariant.DEFAULT });
+export const AppContext = React.createContext<ThemeContext>({ variant: ThemeVariant.DEFAULT, selectVariant: () => {} });
 
 const App = () => {
   const initialVariant = localStorage.getItem(GSKRAP_THEME) as ThemeVariant || ThemeVariant.DEFAULT;

@@ -7,7 +7,7 @@ export enum ThemeVariant {
 
 export interface ThemeContext {
   variant: ThemeVariant;
-  selectVariant?: (variant: ThemeVariant) => void;
+  selectVariant: (variant: ThemeVariant) => void;
 }
 
 export interface CommonThemeVariables {

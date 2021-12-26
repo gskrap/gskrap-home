@@ -1,14 +1,20 @@
 import React, {useEffect, useState} from 'react';
 import * as EarthFrames from './EarthFrames';
 
+const frameInterval = 30;
+
 const Earth = () => {
   const [frameIdx, setFrameIdx] = useState(0);
   const frames = Object.values(EarthFrames);
 
   useEffect(() => {
-    setTimeout(() => {
+    const timeout = setTimeout(() => {
       setFrameIdx((frameIdx + 1) % frames.length)
-    }, 30)
+    }, frameInterval)
+
+    return () => {
+      clearTimeout(timeout);
+    }
   }, [frameIdx])
 
   return frames[frameIdx]();

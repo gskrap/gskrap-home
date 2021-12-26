@@ -33,9 +33,31 @@ const ThemeItem = styled.li`
     color: ${({ theme }) => theme.variant.colorHighlight};
   }
 `
-
 const SpeechThemeSelector = () => {
   const { variant, selectVariant } = useContext(AppContext);
+
+  const onButtonClick = () => {
+    recognition.start();
+  }
+
+  recognition.onresult = (event: any) => {
+    const theme = event.results[0][0].transcript.toUpperCase();
+    if (theme in ThemeVariant) {
+      selectVariant(theme);
+    }
+  }
+
+  recognition.onspeechend = () => {
+    recognition.stop();
+  }
+
+  recognition.onnomatch = () => {
+    console.error('theme not recognized');
+  }
+
+  recognition.onerror = () => {
+    console.error('error occurred in theme recognition');
+  }
 
   return (
     <div>
@@ -49,8 +71,10 @@ const SpeechThemeSelector = () => {
             {theme.toLowerCase()}
           </ThemeItem>
         ))}
-        {variant}
       </ol>
+      <button onClick={onButtonClick}>
+        click me
+      </button>
     </div>
   )
 };
