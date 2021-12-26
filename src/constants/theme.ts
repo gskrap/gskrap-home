@@ -23,6 +23,8 @@ export const darkTheme: Theme = {
   common,
   variant: {
     asciiColor: white,
+    color: white,
+    colorHighlight: '#f2d055',
     appBackground: grayDark,
     boxBackground: grayLight,
     headerBackground: black,
@@ -38,6 +40,8 @@ export const defaultTheme: Theme = {
   common,
   variant: {
     asciiColor: white,
+    color: white,
+    colorHighlight: blueLight,
     appBackground: offWhite,
     boxBackground: grayLight,
     headerBackground: grayDark,
@@ -53,6 +57,8 @@ export const oceanTheme: Theme = {
   common,
   variant: {
     asciiColor: white,
+    color: white,
+    colorHighlight: '#f2d055',
     appBackground: '#1C2541',
     boxBackground: '#3A506B',
     headerBackground: '#0B132B',
@@ -68,6 +74,8 @@ export const valentineTheme: Theme = {
   common,
   variant: {
     asciiColor: '#C00000',
+    color: black,
+    colorHighlight: '#C00000',
     appBackground: offWhite,
     boxBackground: '#FFBBC1',
     headerBackground: '#C00000',

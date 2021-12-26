@@ -1,6 +1,6 @@
 export enum ThemeVariant {
-  DEFAULT = 'DEFAULT',
   DARK = 'DARK',
+  DEFAULT = 'DEFAULT',
   OCEAN = 'OCEAN',
   VALENTINE = 'VALENTINE',
 }
@@ -20,14 +20,16 @@ export interface CommonThemeVariables {
 }
 
 export interface VariantThemeVariables {
-  asciiColor: string;
   appBackground: string;
+  asciiColor: string;
   boxBackground: string;
-  boxTopBarBackground: string;
-  headerBackground: string;
-  headerColor: string;
   boxContentBackground: string;
   boxContentColor: string;
+  boxTopBarBackground: string;
+  color: string;
+  colorHighlight: string;
+  headerBackground: string;
+  headerColor: string;
   selectBackground: string;
 }
 

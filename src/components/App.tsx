@@ -3,6 +3,7 @@ import styled, { ThemeProvider } from 'styled-components';
 import Header from './Header';
 import Box from './Box';
 import About from './About';
+import SpeechThemeSelector from './SpeechThemeSelector';
 import {GSKRAP_THEME, themeMap} from '../constants/theme';
 import { ThemeContext, ThemeVariant } from '../constants/interfaces';
 import '../styles/App.scss';
@@ -37,6 +38,9 @@ const App = () => {
           <BoxContainer>
             <Box name="About" >
               <About />
+            </Box>
+            <Box name="Voice changer">
+              <SpeechThemeSelector />
             </Box>
           </BoxContainer>
         </AppWrapper>
