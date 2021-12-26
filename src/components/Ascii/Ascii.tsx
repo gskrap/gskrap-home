@@ -20,7 +20,7 @@ export const AsciiEl = styled.p`
 const themeAsciiMap: Record<ThemeVariant, JSX.Element> = {
   [ThemeVariant.DARK]: <Moon />,
   [ThemeVariant.DEFAULT]: <Earth />,
-  [ThemeVariant.OCEAN]: <Earth />,
+  [ThemeVariant.NEPTUNE]: <Earth />,
   [ThemeVariant.VALENTINE]: <Heart />,
 }
 

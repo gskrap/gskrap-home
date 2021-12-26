@@ -55,7 +55,7 @@ export const defaultTheme: Theme = {
   }
 }
 
-export const oceanTheme: Theme = {
+export const neptuneTheme: Theme = {
   common,
   variant: {
     asciiColor: white,
@@ -94,6 +94,6 @@ export const valentineTheme: Theme = {
 export const themeMap: Record<ThemeVariant, Theme> = {
   [ThemeVariant.DARK]: darkTheme,
   [ThemeVariant.DEFAULT]: defaultTheme,
-  [ThemeVariant.OCEAN]: oceanTheme,
+  [ThemeVariant.NEPTUNE]: neptuneTheme,
   [ThemeVariant.VALENTINE]: valentineTheme,
 }
