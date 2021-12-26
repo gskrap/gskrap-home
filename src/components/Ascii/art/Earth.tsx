@@ -1,5 +1,5 @@
 import React, {useEffect, useState} from 'react';
-import * as EarthFrames from './EarthAsciiFrames';
+import * as EarthFrames from './EarthFrames';
 
 const Earth = () => {
   const [frameIdx, setFrameIdx] = useState(0);

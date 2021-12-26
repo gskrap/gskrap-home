@@ -1,6 +1,8 @@
 import React, { useContext } from 'react';
 import styled from 'styled-components';
-import Earth from './EarthAscii';
+import Earth from './art/Earth';
+import Heart from './art/Heart';
+import Moon from './art/Moon';
 import { AppContext } from '../App';
 import {ThemeVariant} from '../../constants/interfaces';
 
@@ -14,74 +16,6 @@ export const AsciiEl = styled.p`
     font-size: 6px;
   };
 `;
-
-const Heart = () => (
-  <AsciiEl>
-    &nbsp;<br />
-    &nbsp;<br />
-    &nbsp;   ▒▒▒▒▒▒▒▒▒▒<br />
-    &nbsp;  ▒███████████▒<br />
-    &nbsp; ▒████▒▒▒▒▒▒▒███▒<br />
-    &nbsp;▒████▒▒▒▒▒▒▒▒▒███▒        ▒▒▒▒▒▒<br />
-    &nbsp;▒███▒▒▒▒▒███▒▒▒███▒      ▒██████▒<br />
-    &nbsp;▒███▒▒▒▒██████▒▒███▒    ▒██▒▒▒▒██▒<br />
-    &nbsp;▒███▒▒▒███████▒▒██▒   ▒███▒▒█▒▒██▒<br />
-    &nbsp; ▒███▒▒████████▒██▒ ▒███▒▒███▒▒██▒<br />
-    &nbsp;  ▒██▒▒██████████▒▒███▒▒████▒▒██▒<br />
-    &nbsp;  ▒██▒▒██████████████▒████▒▒██▒<br />
-    &nbsp;   ▒██▒▒█████████████████▒▒██▒<br />
-    &nbsp;    ▒██▒▒██████████████▒▒██▒<br />
-    &nbsp;     ▒██▒▒████████████▒▒██▒<br />
-    &nbsp;     ▒██▒▒██████████▒▒██▒<br />
-    &nbsp;     ▒██▒▒████████▒▒██▒<br />
-    &nbsp;      ▒██▒▒██████▒▒██▒<br />
-    &nbsp;      ▒██▒▒████▒▒██▒<br />
-    &nbsp;       ▒██▒▒███▒▒█▒<br />
-    &nbsp;        ▒██▒▒█▒▒█▒<br />
-    &nbsp;        ▒██▒▒▒█▒<br />
-    &nbsp;        ▒██▒█▒<br />
-    &nbsp;        ▒██▒█▒<br />
-    &nbsp;         ██▒█<br />
-    &nbsp;          █▒<br />
-    &nbsp;          ▒<br />
-    &nbsp;<br />
-    &nbsp;<br />
-  </AsciiEl>
-);
-
-const Moon = () => (
-  <AsciiEl>
-    &nbsp;<br />
-    &nbsp;<br />
-    &nbsp;<br />
-    &nbsp;<br />
-    &nbsp;<br />
-    &nbsp;               ____....<br />
-    &nbsp;           a#####~:::::::,                   |<br />
-    &nbsp;       a######P";:::::::::::,        .     --*--<br />
-    &nbsp;    a########:::::::::::::::::,              |        .<br />
-    &nbsp;   ########P::::::::::::*:::::::    .                         .<br />
-    &nbsp;  ########P::::::::::::::::::.:::.<br />
-    &nbsp; ##### ##P:::::::::::::::::::::::;.               *<br />
-    &nbsp;.#### O ##:::::*:::::::::::::::.::;.<br />
-    &nbsp;###### #### ::::::::::::::::::.:::::<br />
-    &nbsp;########@###,::::::::::::::::::::::;<br />
-    &nbsp;#########~~~:::::::::::::::*:::.:::;    \\ /            .        .<br />
-    &nbsp; ##### ##:::::::::::::::::::::::::;     / \\     .<br />
-    &nbsp;  ####a__ay::::::::::::::::::::::;<br />
-    &nbsp;   ########;::::::::::::::::::::;      .               .<br />
-    &nbsp;    ########a::::::::::::::::::'            .         .      *         .<br />
-    &nbsp;      ########.:::::::::*;:::'             .                        . .<br />
-    &nbsp;       `d######a.::::::::::'                                    .  .<br />
-    &nbsp;          `~9#####.::::''           .               .            .<br />
-    &nbsp;<br />
-    &nbsp;<br />
-    &nbsp;<br />
-    &nbsp;<br />
-    &nbsp;<br />
-    &nbsp;<br />
-  </AsciiEl>
-);
 
 const themeAsciiMap: Record<ThemeVariant, JSX.Element> = {
   [ThemeVariant.DARK]: <Moon />,

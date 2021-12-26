@@ -1,5 +1,5 @@
 import React from 'react';
-import { AsciiEl } from './Ascii';
+import { AsciiEl } from '../Ascii';
 
 export const EarthFrame_001 = () => (
   <AsciiEl>
