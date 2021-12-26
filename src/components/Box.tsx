@@ -24,18 +24,19 @@ const TopBar = styled.div`
 
 const Btn = styled.div`
   font-size: 12px;
-  color: black;
   box-sizing: border-box;
   height: 18px;
   width: 20px;
   margin: 2px;
   text-align: center;
   cursor: pointer;
-  background: ${({ theme }) => theme.variant.boxBackground};
+  ${({ theme }) => `
+    color: ${theme.variant.buttonColor};
+    background: ${theme.variant.boxBackground};
+  `};
 `;
 
 const Content = styled.div`
-  padding: 8px;
   font-family: Terminal_Vector;
   ${({ theme }) => `
     color: ${theme.variant.boxContentColor};

@@ -1,16 +1,13 @@
-import React, { useContext } from 'react';
-import { AppContext } from './App';
+import React from 'react';
 import Ascii from './Ascii/Ascii';
 
 const About = () => {
-  const { variant } = useContext(AppContext);
-
   return (
-    <>
+    <div className="paxl">
       Engineer @ Attentive<br /><br />
       <a href={'https://attentivemobile.com'} target='_blank'>attentivemobile.com</a><br />
       <Ascii />
-    </>
+    </div>
   );
 };
 
